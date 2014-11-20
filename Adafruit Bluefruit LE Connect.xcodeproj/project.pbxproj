@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6548B1401A1BCB69002AA035 /* ShooterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6548B13E1A1BCB69002AA035 /* ShooterViewController.m */; };
+		6548B1411A1BCB69002AA035 /* ShooterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6548B13F1A1BCB69002AA035 /* ShooterViewController.xib */; };
 		F02E54DB18AE94E1006AE85A /* NSData+hex.m in Sources */ = {isa = PBXBuildFile; fileRef = F02E54DA18AE94E1006AE85A /* NSData+hex.m */; };
 		F054948B1893188D007C7284 /* NSString+hex.m in Sources */ = {isa = PBXBuildFile; fileRef = F054948A1893188D007C7284 /* NSString+hex.m */; };
 		F05E7E0318BEF399005E25F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F05E7E0218BEF399005E25F6 /* Images.xcassets */; };
@@ -57,6 +59,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6548B13D1A1BCB69002AA035 /* ShooterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShooterViewController.h; sourceTree = "<group>"; };
+		6548B13E1A1BCB69002AA035 /* ShooterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShooterViewController.m; sourceTree = "<group>"; };
+		6548B13F1A1BCB69002AA035 /* ShooterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShooterViewController.xib; sourceTree = "<group>"; };
 		F02E54D918AE94E1006AE85A /* NSData+hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+hex.h"; sourceTree = "<group>"; };
 		F02E54DA18AE94E1006AE85A /* NSData+hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+hex.m"; sourceTree = "<group>"; };
 		F05494891893188D007C7284 /* NSString+hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+hex.h"; sourceTree = "<group>"; };
@@ -163,6 +168,7 @@
 				F0CE1B9618A23FF8005F831A /* UARTViewController_iPad.xib */,
 				F0CE1B9918A24030005F831A /* UARTViewController_iPhone.xib */,
 				F0FB078718C02D9800D263DD /* UARTViewController_iPhone568px.xib */,
+				6548B13F1A1BCB69002AA035 /* ShooterViewController.xib */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -218,6 +224,8 @@
 				F08CE410188FD0C10098A4BD /* UARTPeripheral.m */,
 				F0CE1B9418A23FF8005F831A /* UARTViewController.h */,
 				F0CE1B9518A23FF8005F831A /* UARTViewController.m */,
+				6548B13D1A1BCB69002AA035 /* ShooterViewController.h */,
+				6548B13E1A1BCB69002AA035 /* ShooterViewController.m */,
 			);
 			name = Classes;
 			path = "BLE Test";
@@ -299,7 +307,7 @@
 				ORGANIZATIONNAME = "Adafruit Industries";
 				TargetAttributes = {
 					F0A2C96516BBE44500F2FD12 = {
-						DevelopmentTeam = 2X94RM7457;
+						DevelopmentTeam = 46QV6PCANK;
 					};
 				};
 			};
@@ -339,6 +347,7 @@
 				F0C47C0D16C2362E002EFADA /* adafruit_logo2012-white-horiz-230w.png in Resources */,
 				F0C47C1816C23CB3002EFADA /* CPGridButtonStretchable.png in Resources */,
 				F0C47C1916C23CB3002EFADA /* CPGridButtonStretchable@2x.png in Resources */,
+				6548B1411A1BCB69002AA035 /* ShooterViewController.xib in Resources */,
 				F0CE1B9818A23FF8005F831A /* UARTViewController_iPad.xib in Resources */,
 				F0C47C1A16C23CB3002EFADA /* CPModuleButtonStretchable.png in Resources */,
 				F0FB078618C02B2300D263DD /* BLEMainViewController_iPhone568px.xib in Resources */,
@@ -367,6 +376,7 @@
 			files = (
 				F02E54DB18AE94E1006AE85A /* NSData+hex.m in Sources */,
 				F0A2C97616BBE44500F2FD12 /* main.m in Sources */,
+				6548B1401A1BCB69002AA035 /* ShooterViewController.m in Sources */,
 				F0D74E7918A8DBF300643E00 /* HelpViewController.m in Sources */,
 				F075168918B735DB000556AF /* CBUUID+StringExtraction.m in Sources */,
 				F0A2C97A16BBE44500F2FD12 /* BLEAppDelegate.m in Sources */,

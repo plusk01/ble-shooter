@@ -10,14 +10,16 @@
 #import "HelpViewController.h"
 #import "PinIOViewController.h"
 #import "UARTViewController.h"
+#import "ShooterViewController.h"
 
 
-@interface BLEMainViewController : UIViewController <UINavigationControllerDelegate, HelpViewControllerDelegate, CBCentralManagerDelegate, UARTPeripheralDelegate, UARTViewControllerDelegate, PinIOViewControllerDelegate>
+@interface BLEMainViewController : UIViewController <UINavigationControllerDelegate, HelpViewControllerDelegate, CBCentralManagerDelegate, UARTPeripheralDelegate, UARTViewControllerDelegate, PinIOViewControllerDelegate, ShooterViewControllerDelegate>
 
 typedef enum {
     ConnectionModeNone  = 0,
     ConnectionModePinIO,
     ConnectionModeUART,
+    ConnectionModeShooter,
 } ConnectionMode;
 
 typedef enum {
@@ -31,7 +33,9 @@ typedef enum {
 @property (strong, nonatomic) UIPopoverController               *helpPopoverController;
 @property (strong, nonatomic) IBOutlet PinIOViewController      *pinIoViewController;
 @property (strong, nonatomic) IBOutlet UARTViewController       *uartViewController;
+@property (strong, nonatomic) IBOutlet ShooterViewController    *shooterViewController;
 @property (strong, nonatomic) IBOutlet UIButton                 *pinIoButton;
+@property (strong, nonatomic) IBOutlet UIButton                 *shooterButton;
 @property (strong, nonatomic) IBOutlet UIButton                 *uartButton;
 @property (strong, nonatomic) IBOutlet UIButton                 *infoButton;
 @property (strong, nonatomic) IBOutlet UINavigationController   *navController;

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShooterViewController">
+            <connections>
+                <outlet property="distanceLabel" destination="OI2-wH-fWP" id="wvo-l8-CTX"/>
+                <outlet property="distanceProgressBar" destination="XUB-x0-EN0" id="8aI-UZ-dcl"/>
+                <outlet property="hSlider" destination="Ze6-DR-7ir" id="F0q-Hj-DQ6"/>
+                <outlet property="vSlider" destination="IJa-3D-ar9" id="A1C-4Z-G1Z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.45000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ze6-DR-7ir">
+                    <rect key="frame" x="6" y="181" width="235" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="8LY-6D-Pri"/>
+                        <constraint firstAttribute="width" constant="210" id="tH7-Cl-9bq"/>
+                    </constraints>
+                    <connections>
+                        <action selector="sliderChanged:" destination="-1" eventType="valueChanged" id="RYA-IL-Cgp"/>
+                    </connections>
+                </slider>
+                <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.050000000000000003" minValue="0.050000000000000003" maxValue="0.88" translatesAutoresizingMaskIntoConstraints="NO" id="IJa-3D-ar9">
+                    <rect key="frame" x="176" y="101" width="214" height="31"/>
+                    <connections>
+                        <action selector="sliderChanged:" destination="-1" eventType="valueChanged" id="fiS-NF-XLg"/>
+                    </connections>
+                </slider>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ah6-j3-YDK">
+                    <rect key="frame" x="121" y="80" width="79" height="51"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="Fire!">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="fireButton:" destination="-1" eventType="touchUpInside" id="zB8-uW-awW"/>
+                    </connections>
+                </button>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XUB-x0-EN0">
+                    <rect key="frame" x="8" y="423" width="304" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="304" id="7wK-0n-T8m"/>
+                    </constraints>
+                </progressView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Distance: ? cm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OI2-wH-fWP">
+                    <rect key="frame" x="101" y="443" width="118" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9LQ-4Q-0xP">
+                    <rect key="frame" x="91" y="484" width="139" height="30"/>
+                    <state key="normal" title="Request Distance">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="requestDistanceButton:" destination="-1" eventType="touchUpInside" id="eUd-lL-OQe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5a-hF-lcP">
+                    <rect key="frame" x="111" y="370" width="99" height="30"/>
+                    <state key="normal" title="Send to Home">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="homeButton:" destination="-1" eventType="touchUpInside" id="TVD-WS-qJP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="OI2-wH-fWP" secondAttribute="centerX" id="2bt-oY-PKg"/>
+                <constraint firstAttribute="bottom" secondItem="9LQ-4Q-0xP" secondAttribute="bottom" constant="54" id="Duq-g3-Mhg"/>
+                <constraint firstAttribute="bottom" secondItem="OI2-wH-fWP" secondAttribute="bottom" constant="100" id="FD4-RD-2oU"/>
+                <constraint firstAttribute="bottom" secondItem="h5a-hF-lcP" secondAttribute="bottom" constant="168" id="Fil-sW-FKg"/>
+                <constraint firstAttribute="bottom" secondItem="XUB-x0-EN0" secondAttribute="bottom" constant="143" id="Ogb-t0-zRF"/>
+                <constraint firstItem="Ze6-DR-7ir" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="17" id="On6-XC-3hs"/>
+                <constraint firstAttribute="centerX" secondItem="h5a-hF-lcP" secondAttribute="centerX" id="Qso-eR-TLX"/>
+                <constraint firstAttribute="centerX" secondItem="9LQ-4Q-0xP" secondAttribute="centerX" id="XM1-Ku-cqb"/>
+                <constraint firstAttribute="centerX" secondItem="XUB-x0-EN0" secondAttribute="centerX" id="ddH-Dq-dT3"/>
+                <constraint firstAttribute="centerX" secondItem="ah6-j3-YDK" secondAttribute="centerX" id="esh-Qb-rLS"/>
+                <constraint firstItem="ah6-j3-YDK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="hxM-5Q-2ed"/>
+                <constraint firstItem="Ze6-DR-7ir" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="195" id="jwk-bi-LYw"/>
+            </constraints>
+            <point key="canvasLocation" x="305" y="375"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

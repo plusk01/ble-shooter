@@ -187,6 +187,10 @@
         NSLog(@"Starting UART Mode …");
         _connectionMode = ConnectionModeUART;
     }
+    else if ([sender isEqual:self.shooterButton]) { //Shooter
+        NSLog(@"Starting Shooter Mode …");
+        _connectionMode = ConnectionModeShooter;
+    }
     else return;
     
     _connectionStatus = ConnectionStatusScanning;
@@ -256,6 +260,7 @@
     
     _uartButton.enabled = enabled;
     _pinIoButton.enabled = enabled;
+    _shooterButton.enabled = enabled;
 }
 
 
@@ -398,6 +403,12 @@
         [_uartViewController didConnect];
     }
     
+    //Shooter mode
+    else if (_connectionMode == ConnectionModeShooter) {
+        self.shooterViewController = [[ShooterViewController alloc]initWithDelegate:self];
+        [_shooterViewController didConnect];
+    }
+    
     //Dismiss Alert view & update main view
     [currentAlertView dismissWithClickedButtonIndex:-1 animated:NO];
     
@@ -409,6 +420,9 @@
     
     else if (_connectionMode == ConnectionModeUART)
         vc = _uartViewController;
+    
+    else if (_connectionMode == ConnectionModeShooter)
+        vc = _shooterViewController;
     
     if (vc != nil){
         [_navController pushViewController:vc animated:YES];
@@ -462,6 +476,12 @@
             //send data to PIN IO Controller
             [_pinIoViewController receiveData:newData];
         }
+        
+        //Shooter
+        else if (_connectionMode == ConnectionModeShooter) {
+            //send data to Shooter Controller
+            [_shooterViewController receiveData:newData];
+        }
     }
 }
 
@@ -479,7 +499,8 @@
     UIViewController *topVC = [_navController topViewController];
     if ((_connectionStatus == ConnectionStatusConnected) &&
         ([topVC isMemberOfClass:[PinIOViewController class]] ||
-        [topVC isMemberOfClass:[UARTViewController class]])) {
+        [topVC isMemberOfClass:[UARTViewController class]]   ||
+        [topVC isMemberOfClass:[ShooterViewController class]])) {
         
         //return to main view
         [_navController popToRootViewControllerAnimated:YES];
@@ -500,6 +521,7 @@
     //dereference mode controllers
     self.pinIoViewController = nil;
     self.uartViewController = nil;
+    self.shooterViewController = nil;
     
     //make reconnection available after short delay
     [self performSelector:@selector(enableConnectionButtons) withObject:nil afterDelay:1.0f];
@@ -530,15 +552,15 @@
 }
 
 
-#pragma mark UartViewControllerDelegate / PinIOViewControllerDelegate
+#pragma mark UartViewControllerDelegate / PinIOViewControllerDelegate / ShooterViewControllerDelegate
 
 
 - (void)sendData:(NSData*)newData{
     
     //Output data to UART peripheral
     
-    NSString *hexString = [newData hexRepresentationWithSpaces:YES];
-    NSLog(@"Sending: %@", hexString);
+//    NSString *hexString = [newData hexRepresentationWithSpaces:YES];
+//    NSLog(@"Sending: %@", hexString);
     
     [currentPeripheral writeRawData:newData];
     
