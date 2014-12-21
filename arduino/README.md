@@ -12,3 +12,9 @@ Original BYU Competition - [Angry Engineers](http://www.et.byu.edu/~bmazzeo/LTR/
 - Adafruit Bluefruit LE module
 - 9v Battery, with clip
 - 5v Voltage Regulator
+
+--------------------------------------------------------------
+
+### C++ Code ###
+
+Instead of using the vanilla Arduino IDE, I use the [Arduino-Makefile Project](https://github.com/sudar/Arduino-Makefile) so that I can write all the code in pure C++ in Sublime Text, and then use my terminal to `make` the binary and upload to the teensy.
