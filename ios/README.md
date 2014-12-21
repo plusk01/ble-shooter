@@ -1,7 +1,18 @@
-BLE Shooter
-===========
+Bluefruit LE Connect
+=================
 
-## iOS Objective-C App ##
-Based off of the Adafruit [Bluefruit LE Connect](https://github.com/adafruit/Bluefruit_LE_Connect) iOS app, Version 1.3; which uses the Adafruit [Bluefruit LE](http://www.adafruit.com/products/1697), which is a nRF8001 Breakout board.
+iOS app for use with Adafruit's Bluefruit LE breakout board connected to Arduino
 
-## Arduino C++ Code ##
+Pick up a breakout to use along with this app here: http://www.adafruit.com/products/1697
+
+Project tutorial: http://learn.adafruit.com/getting-started-with-the-nrf8001-bluefruit-le-breakout
+
+In progress!
+
+Adafruit invests time and resources providing this open source code, please support Adafruit and open-source hardware by purchasing products from Adafruit!
+
+
+Version 1.3
+=================
+
+• Initial release
