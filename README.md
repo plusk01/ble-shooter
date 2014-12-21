@@ -17,3 +17,5 @@ The Arduino code simply waits for instructions from the iOS app through the blue
 ### Demo ###
 
 See a demo video [here](http://youtu.be/vqHWxgjiyA8).
+
+See pictures [here](https://github.com/plusk01/ble-shooter/tree/master/extra).
