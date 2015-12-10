@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BLEMainViewController">
@@ -23,6 +23,7 @@
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
             <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="1Hl-6j-CH6">
                 <autoresizingMask key="autoresizingMask"/>
+                <animations/>
             </navigationBar>
             <viewControllers>
                 <viewController title="Menu" id="0Xc-RC-aZ0" userLabel="View Controller - Menu">
@@ -36,6 +37,7 @@
                         <subviews>
                             <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.39999999999999963" contentMode="center" image="Adaflower.png" translatesAutoresizingMaskIntoConstraints="NO" id="69">
                                 <rect key="frame" x="109" y="305" width="102" height="102"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="102" id="bRR-6c-G7V"/>
                                     <constraint firstAttribute="height" constant="102" id="rGk-WQ-C6U"/>
@@ -43,6 +45,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEN-kM-VeC">
                                 <rect key="frame" x="100" y="71" width="120" height="40"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="8no-LB-Wit"/>
                                     <constraint firstAttribute="width" constant="120" id="yne-mS-Zet"/>
@@ -55,6 +58,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMf-hO-2ww">
                                 <rect key="frame" x="100" y="139" width="120" height="40"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="K6Y-wi-TuT"/>
                                     <constraint firstAttribute="height" constant="40" id="Y9X-Ga-2io"/>
@@ -67,6 +71,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjq-I7-rka">
                                 <rect key="frame" x="100" y="207" width="120" height="40"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="Icp-dK-3JZ"/>
                                     <constraint firstAttribute="height" constant="40" id="jcY-GH-GIk"/>
@@ -78,6 +83,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <constraints>
                             <constraint firstItem="IEN-kM-VeC" firstAttribute="leading" secondItem="34" secondAttribute="leading" constant="100" id="52V-1u-cO2"/>
                             <constraint firstItem="IEN-kM-VeC" firstAttribute="top" secondItem="34" secondAttribute="top" constant="71" id="C7r-PT-dhs"/>
@@ -98,6 +104,7 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Fyl-hM-Hb8" userLabel="Button - Info">
                                 <rect key="frame" x="282" y="11" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="22" id="1fD-7f-s8V"/>
                                     <constraint firstAttribute="height" constant="22" id="245-PU-cSs"/>
@@ -117,6 +124,7 @@
             <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="uD3-zR-KSc">
                 <rect key="frame" x="0.0" y="480" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <animations/>
             </toolbar>
             <connections>
                 <outlet property="delegate" destination="-1" id="7ed-cH-JgW"/>
@@ -125,6 +133,7 @@
         <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="1xm-FQ-qRq" userLabel="View - Main">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <animations/>
             <color key="backgroundColor" white="0.14999999999999999" alpha="1" colorSpace="calibratedWhite"/>
             <nil key="simulatedStatusBarMetrics"/>
         </view>
@@ -141,6 +150,7 @@
             <subviews>
                 <navigationBar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIA-TE-amJ">
                     <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                    <animations/>
                     <items>
                         <navigationItem title="Help" id="aEb-7T-mER" userLabel="Navigation Item - Done">
                             <barButtonItem key="leftBarButtonItem" title="Done" id="j0y-S3-7Re">
@@ -153,20 +163,24 @@
                 </navigationBar>
                 <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="center" fixedFrame="YES" image="adafruit_logo2012-white-horiz-230w.png" translatesAutoresizingMaskIntoConstraints="NO" id="MIy-C1-OON">
                     <rect key="frame" x="20" y="72" width="260" height="100"/>
+                    <animations/>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Bluefruit LE Connect" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jb7-Au-JeN">
                     <rect key="frame" x="100" y="165" width="200" height="30"/>
+                    <animations/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </label>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sly-h6-TY9">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="22"/>
+                    <animations/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" indicatorStyle="white" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Cg-B2-X07">
                     <rect key="frame" x="20" y="209" width="280" height="251"/>
+                    <animations/>
                     <attributedString key="attributedText">
                         <fragment content="• Connect ">
                             <attributes>
@@ -262,12 +276,14 @@ http://www.adafruit.com/bluefruitle
                 </textView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="v.1.1.1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVO-FF-gLF">
                     <rect key="frame" x="100" y="184" width="200" height="30"/>
+                    <animations/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </label>
             </subviews>
+            <animations/>
             <color key="backgroundColor" white="0.14999999999999999" alpha="1" colorSpace="calibratedWhite"/>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
@@ -277,9 +293,4 @@ http://www.adafruit.com/bluefruitle
         <image name="Adaflower.png" width="86" height="86"/>
         <image name="adafruit_logo2012-white-horiz-230w.png" width="230" height="93"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

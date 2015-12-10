@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Adafruit Bluefruit LE Connect.xcodeproj">
+      location = "self:/Users/plusk01/Programming/iOS/ble-shooter/ios/BLE Shooter.xcodeproj">
    </FileRef>
 </Workspace>

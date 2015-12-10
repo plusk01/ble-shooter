@@ -50,7 +50,7 @@
         [self resetUI];
         
         // Set up the timer to read ultrasonic data
-//        [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(sendUltrasonicRequest) userInfo:nil repeats:YES];
+        [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(sendUltrasonicRequest) userInfo:nil repeats:YES];
     }
     
     return self;

@@ -279,9 +279,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F0A2C96516BBE44500F2FD12 /* Adafruit Bluefruit LE Connect */ = {
+		F0A2C96516BBE44500F2FD12 /* BLE Shooter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0A2C99216BBE44500F2FD12 /* Build configuration list for PBXNativeTarget "Adafruit Bluefruit LE Connect" */;
+			buildConfigurationList = F0A2C99216BBE44500F2FD12 /* Build configuration list for PBXNativeTarget "BLE Shooter" */;
 			buildPhases = (
 				F0A2C96216BBE44500F2FD12 /* Sources */,
 				F0A2C96316BBE44500F2FD12 /* Frameworks */,
@@ -291,7 +291,7 @@
 			);
 			dependencies = (
 			);
-			name = "Adafruit Bluefruit LE Connect";
+			name = "BLE Shooter";
 			productName = "BLE Test";
 			productReference = F0A2C96616BBE44500F2FD12 /* BluetoothLE Test.app */;
 			productType = "com.apple.product-type.application";
@@ -307,11 +307,11 @@
 				ORGANIZATIONNAME = "Adafruit Industries";
 				TargetAttributes = {
 					F0A2C96516BBE44500F2FD12 = {
-						DevelopmentTeam = 46QV6PCANK;
+						DevelopmentTeam = P84SM4WGSD;
 					};
 				};
 			};
-			buildConfigurationList = F0A2C96116BBE44500F2FD12 /* Build configuration list for PBXProject "Adafruit Bluefruit LE Connect" */;
+			buildConfigurationList = F0A2C96116BBE44500F2FD12 /* Build configuration list for PBXProject "BLE Shooter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -323,7 +323,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F0A2C96516BBE44500F2FD12 /* Adafruit Bluefruit LE Connect */,
+				F0A2C96516BBE44500F2FD12 /* BLE Shooter */,
 			);
 		};
 /* End PBXProject section */
@@ -498,6 +498,7 @@
 				GCC_PREFIX_HEADER = "BLE Test/BluetoothLE Test-Prefix.pch";
 				INFOPLIST_FILE = "BLE Test/BluetoothLE Test-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.plusk.bleshooter;
 				PRODUCT_NAME = "BluetoothLE Test";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -509,12 +510,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BLE Test/BluetoothLE Test-Prefix.pch";
 				INFOPLIST_FILE = "BLE Test/BluetoothLE Test-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.plusk.bleshooter;
 				PRODUCT_NAME = "BluetoothLE Test";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -524,7 +526,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F0A2C96116BBE44500F2FD12 /* Build configuration list for PBXProject "Adafruit Bluefruit LE Connect" */ = {
+		F0A2C96116BBE44500F2FD12 /* Build configuration list for PBXProject "BLE Shooter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F0A2C99016BBE44500F2FD12 /* Debug */,
@@ -533,7 +535,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F0A2C99216BBE44500F2FD12 /* Build configuration list for PBXNativeTarget "Adafruit Bluefruit LE Connect" */ = {
+		F0A2C99216BBE44500F2FD12 /* Build configuration list for PBXNativeTarget "BLE Shooter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F0A2C99316BBE44500F2FD12 /* Debug */,
